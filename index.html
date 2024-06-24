@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open New Window</title>
+    <title>Open New Window on Load</title>
 </head>
 <body>
-    <button id="openWindowButton">Open New Window</button>
+    <h1>Welcome to the page!</h1>
 
     <script>
-        document.getElementById('openWindowButton').addEventListener('click', function() {
+        document.addEventListener('DOMContentLoaded', function() {
             window.open('https://www.example.com', '_blank');
         });
     </script>
